@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Patitas Felices</title>
+    <link rel="icon" href="assets/patas.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar responsivo de Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.jpg" alt="Patitas Felices Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5 bg-primary text-white">
+        <h1>Veterinaria Patitas Felices</h1>
+        <p class="lead">Cuidando a tus mascotas con amor y profesionalismo</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Sección de bienvenida -->
+        <section id="inicio" class="mb-5">
+            <h2 class="text-center mb-4">Bienvenidos a nuestra veterinaria</h2>
+            <p class="text-center">Somos una <strong>clínica veterinaria</strong> dedicada al cuidado de tus mascotas. Nos preocupamos por su salud y bienestar.</p>
+            <p class="text-center">Nuestro equipo está formado por <em>profesionales capacitados</em> que aman a los animales.</p>
+            <div class="text-center">
+                <img src="assets/51ce1e9a-830f-41f4-ad6f-e74cdc0476a7.png" alt="Logo patitas felices" class="img-fluid rounded shadow mx-auto d-block">
+            </div>
+        </section>
+
+        <!-- Grid de 3 columnas con Cards -->
+        <section id="servicios" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Servicios Destacados</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.avif" class="card-img-top img-fluid" alt="Consultas veterinarias">
+                        <div class="card-body">
+                            <h3 class="card-title">Consultas Generales</h3>
+                            <p class="card-text">Atención médica completa para tu mascota con los mejores profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/1101395.avif" class="card-img-top img-fluid" alt="Vacunación">
+                        <div class="card-body">
+                            <h3 class="card-title">Vacunación</h3>
+                            <p class="card-text">Programas completos de vacunación para proteger la salud de tu compañero.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/clinica_veterinaria_ejea_132-1024x682.jpg" class="card-img-top img-fluid" alt="Cirugías">
+                        <div class="card-body">
+                            <h3 class="card-title">Cirugías</h3>
+                            <p class="card-text">Procedimientos quirúrgicos con tecnología de punta y personal capacitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón con Collapse -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#masServicios" aria-expanded="false" aria-controls="masServicios">
+                    Ver todos nuestros servicios
+                </button>
+            </div>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse mt-3" id="masServicios">
+                <div class="card card-body">
+                    <h3>Lista completa de servicios</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Consultas generales</li>
+                                <li>Vacunación</li>
+                                <li>Cirugías</li>
+                                <li>Limpieza dental</li>
+                                <li>Peluquería canina</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Nuestros valores:</h4>
+                            <ol>
+                                <li>Amor por los animales</li>
+                                <li>Profesionalismo</li>
+                                <li>Honestidad</li>
+                                <li>Compromiso</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="ratio ratio-16x9 mt-3">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/333070956?h=650833a6c7" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Horarios de Atención</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes a Viernes</td>
+                            <td>9:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>9:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Urgencias 24h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center">Para información sobre cuidadores de mascotas, visita <a href="https://www.petbacker.es/s/cuidadores-de-animales/quito--distrito-metropolitano-de-quito--ecuador" target="_blank">PetBacker</a>.</p>
+        </section>
+
+        <!-- Formulario responsivo -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="p-4 border rounded shadow-sm bg-light">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre y apellido:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Comentarios:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2"><strong>Veterinaria Patitas Felices &copy; 2025</strong></p>
+            <p class="mb-2">📞 Teléfono: 098 765 4321 | 📍 Dirección: Pomasqui - Barrio Bella María</p>
+            <div class="mt-3">
+                <a href="#inicio" class="text-decoration-none me-3">Inicio</a>
+                <a href="#servicios" class="text-decoration-none me-3">Servicios</a>
+                <a href="#contacto" class="text-decoration-none">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
