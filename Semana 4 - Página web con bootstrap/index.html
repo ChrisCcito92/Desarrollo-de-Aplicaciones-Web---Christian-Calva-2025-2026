@@ -79,6 +79,8 @@
                             class="active"></button>
                         <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="4"></button>
                     </div>
 
                     <div class="carousel-inner rounded">
@@ -87,11 +89,19 @@
                                 alt="Veterinaria Patitas Felices">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.avif"
+                            <img src="assets/6653c3ad51bf7.jpg"
                                 class="d-block w-100" alt="Consulta veterinaria">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/clinica_veterinaria_ejea_132-1024x682.jpg" class="d-block w-100"
+                            <img src="assets/Medicina-Veterinaria.webp" class="d-block w-100"
+                                alt="Atención profesional">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/escuela-de-veterinaria-01.jpg" class="d-block w-100"
+                                alt="Atención profesional">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/medicinaveterinariacue-banner2-movil.jpg" class="d-block w-100"
                                 alt="Atención profesional">
                         </div>
                     </div>
@@ -257,6 +267,24 @@
         </section>
 
     </main>
+
+<!-- GALERÍA INTERACTIVA -->
+<section id="galeria" class="mb-5">
+    <h2 class="text-center mb-4">Galería Interactiva</h2>
+
+    <div class="mb-3 text-center">
+        <input id="inputImagen" type="url" class="form-control mx-auto" placeholder="Ingresa una URL de imagen..." style="max-width:600px;">
+        <button id="btnAgregar" class="btn btn-primary mt-3">Agregar Imagen</button>
+        <button id="btnEliminar" class="btn btn-danger mt-3 ms-2">Eliminar Imagen Seleccionada</button>
+    </div>
+
+    <div id="contenedorGaleria" class="d-flex flex-wrap gap-3 justify-content-center p-3 bg-light rounded"
+        style="min-height:200px; border:2px dashed #ccc;">
+    </div>
+</section>
+
+<!-- Vinculo del JS -->
+<script src="script.js"></script>
 
     <!-- FOOTER -->
     <footer class="text-center py-4">

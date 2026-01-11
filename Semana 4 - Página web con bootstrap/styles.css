@@ -154,3 +154,23 @@ button:focus-visible {
 html {
     scroll-behavior: smooth;
 }
+
+/* --- GALERÍA INTERACTIVA --- */
+#contenedorGaleria img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+#contenedorGaleria img:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen seleccionada */
+.img-seleccionada {
+    outline: 4px solid #4a90e2;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+}
