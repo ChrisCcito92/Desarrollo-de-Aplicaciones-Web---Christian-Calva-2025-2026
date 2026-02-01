@@ -1,0 +1,265 @@
+:root {
+    --primary-blue: #4a90e2;
+    --primary-blue-dark: #357ae8;
+    --navbar-blue: #2c5f8d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar.navbar-dark {
+    background-color: var(--navbar-blue);
+}
+
+.navbar-logo {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-blue);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+}
+
+/* TITULOS */
+h2 {
+    color: var(--primary-blue);
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: var(--primary-blue);
+    display: block;
+    margin: 10px auto 0;
+}
+
+h3,
+h4 {
+    text-align: center;
+}
+
+/* SECCIONES */
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-blue-dark);
+}
+
+/* CARRUSEL */
+#carouselInicio {
+    max-width: 700px;
+}
+
+#carouselInicio img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media (max-width:768px) {
+    #carouselInicio img {
+        height: 300px;
+    }
+}
+
+/* CARDS */
+.service-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .4s ease, box-shadow .4s ease;
+    animation: slideUp .6s ease-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .2);
+}
+
+.service-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* FORM */
+form:focus-within {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+/* CONTACTO */
+.contacto-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Formulario */
+#formContacto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs y textarea */
+#formContacto input,
+#formContacto textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Botón */
+#formContacto button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover botón */
+#formContacto button:hover {
+    background-color: #45a049;
+}
+
+/* Mapa */
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MENSAJE DE ÉXITO FORMULARIO */
+.mensaje-exito {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--navbar-blue);
+    color: white;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #a8d5ff;
+    margin: 0 10px;
+    transition: all .3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ANIMACIONES */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ACCESIBILIDAD */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary-blue);
+    outline-offset: 3px;
+}
+
+/* SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- GALERÍA INTERACTIVA --- */
+#contenedorGaleria img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+#contenedorGaleria img:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen seleccionada */
+.img-seleccionada {
+    outline: 4px solid #4a90e2;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
+/*Formularios*/
+/* Clase aplicada a los campos válidos:*/
+.campo-valido {
+    border: 2px solid #28a745 !important;
+}
+
+/* Clase aplicada a los campos inválidos:*/
+.campo-invalido {
+    border: 2px solid #dc3545 !important;
+}
+
+/* Estilo de los textos donde se muestran mensajes de error:*/
+.error-msg {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Patitas Felices</title>
+    <link rel="icon" href="assets/patas.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">
+                <img src="assets/logo.jpg" alt="Patitas Felices Logo" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trabajacn">Trabaja con nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="text-center py-5 text-white">
+        <h1>Veterinaria Patitas Felices</h1>
+        <p class="lead">Cuidando a tus mascotas con amor y profesionalismo</p>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container my-5">
+
+        <!-- INICIO -->
+        <section id="inicio" class="mb-5">
+            <h2 class="text-center mb-4">Bienvenidos a nuestra veterinaria</h2>
+
+            <p class="text-center">
+                En <strong>Veterinaria Patitas Felices</strong> creemos que las mascotas no son solo animales, sino
+                miembros fundamentales de la familia.
+                Por eso, nuestro compromiso va más allá de la atención médica: trabajamos cada día para brindar un
+                servicio integral basado en el amor,
+                el respeto y el bienestar animal.
+                Contamos con un equipo de profesionales capacitados y apasionados por su labor, preparados para ofrecer
+                una atención segura, responsable y
+                personalizada en cada consulta. Desde controles preventivos y vacunación, hasta procedimientos
+                especializados, nos aseguramos de que cada
+                mascota reciba el cuidado que merece en un ambiente cálido, moderno y confiable.
+                Nuestra misión es acompañarte en cada etapa de la vida de tu mascota, promoviendo la prevención, la
+                salud y la calidad de vida, porque su
+                felicidad y tranquilidad son también las nuestras. En Patitas Felices, tu confianza es nuestra mayor
+                motivación.
+            </p>
+
+            <p class="text-center">
+                Nuestro equipo está formado por <em>profesionales capacitados</em>
+                que aman a los animales.
+            </p>
+
+            <!-- CARRUSEL -->
+            <div class="text-center">
+                <div id="carouselInicio" class="carousel slide mx-auto shadow rounded" data-bs-ride="carousel"
+                    data-bs-interval="4000">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="assets/51ce1e9a-830f-41f4-ad6f-e74cdc0476a7.png" class="d-block w-100"
+                                alt="Veterinaria Patitas Felices">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/6653c3ad51bf7.jpg" class="d-block w-100" alt="Consulta veterinaria">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/Medicina-Veterinaria.webp" class="d-block w-100"
+                                alt="Atención profesional">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/escuela-de-veterinaria-01.jpg" class="d-block w-100"
+                                alt="Atención profesional">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/medicinaveterinariacue-banner2-movil.jpg" class="d-block w-100"
+                                alt="Atención profesional">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Servicios Destacados</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.avif"
+                            class="card-img-top" alt="Consultas">
+                        <div class="card-body">
+                            <h3 class="card-title">Consultas Generales</h3>
+                            <p class="card-text">Atención médica completa para tu mascota con los mejores profesionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/1101395.avif" class="card-img-top" alt="Vacunación">
+                        <div class="card-body">
+                            <h3 class="card-title">Vacunación</h3>
+                            <p class="card-text">Programas completos de vacunación para proteger la salud de tu
+                                compañero.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="assets/clinica_veterinaria_ejea_132-1024x682.jpg" class="card-img-top" alt="Cirugías">
+                        <div class="card-body">
+                            <h3 class="card-title">Cirugías</h3>
+                            <p class="card-text">Procedimientos quirúrgicos con tecnología de punta y personal
+                                capacitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTÓN COLLAPSE -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#masServicios">
+                    Ver todos nuestros servicios
+                </button>
+            </div>
+
+            <!-- COLLAPSE -->
+            <div class="collapse mt-3" id="masServicios">
+                <div class="card card-body">
+
+                    <div class="row">
+
+                        <h4>Lista completa de servicios</h4>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover align-middle">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <td>N°</td>
+                                        <th>Servicio</th>
+                                        <th>Precio</th>
+                                        <th>Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Consulta veterinaria</td>
+                                        <td>$15</td>
+                                        <td>Evaluación general del estado de salud de la mascota.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Vacunación</td>
+                                        <td>$20</td>
+                                        <td>Aplicación de vacunas para prevenir enfermedades.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Desparasitación</td>
+                                        <td>$10</td>
+                                        <td>Tratamiento para eliminar parásitos internos y externos.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Cirugía básica</td>
+                                        <td>$80</td>
+                                        <td>Procedimientos quirúrgicos menores con supervisión médica.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.</td>
+                                        <td>Limpieza dental</td>
+                                        <td>$25</td>
+                                        <td>Higiene bucal para prevenir enfermedades dentales.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>Nuestros valores:</h4>
+                            <ol>
+                                <li>Amor por los animales</li>
+                                <li>Profesionalismo</li>
+                                <li>Honestidad</li>
+                                <li>Compromiso</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="ratio ratio-16x9 mt-3">
+                        <iframe src="https://player.vimeo.com/video/333070956?h=650833a6c7" allowfullscreen
+                            style="border:0;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HORARIOS -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Horarios de Atención</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes a Viernes</td>
+                            <td>9:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>9:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Urgencias 24h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-center">
+                Para información sobre cuidadores de mascotas, visita
+                <a href="https://madridsalud.es/cuidados-basicos-para-los-animales-de-compania-perros-y-gatos/"
+                    target="_blank">
+                    Cuidados básicos para los animales de compañía (perros y gatos)
+                </a>.
+            </p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="trabajacn" class="mb-5">
+            <h2 class="text-center mb-4">Trabaja con nosotros</h2>
+
+            <form id="form-validacion" class="p-4 border rounded shadow-sm bg-light mx-auto" style="max-width:800px;">
+
+                <!-- Nombre -->
+                <div class="mb-3">
+                    <label class="form-label">Nombres completos:</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                    <small class="text-danger error-msg" id="error-nombre"></small>
+                </div>
+
+                <!-- Correo -->
+                <div class="mb-3">
+                    <label class="form-label">Correo:</label>
+                    <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com">
+                    <small class="text-danger error-msg" id="error-correo"></small>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="mb-3">
+                    <label class="form-label">Contraseña:</label>
+                    <input type="password" id="password" class="form-control"
+                        placeholder="Mínimo 8 caracteres, número y símbolo">
+                    <small class="text-danger error-msg" id="error-password"></small>
+                </div>
+
+                <!-- Confirmar Contraseña -->
+                <div class="mb-3">
+                    <label class="form-label">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar" class="form-control" placeholder="Repite la contraseña">
+                    <small class="text-danger error-msg" id="error-confirmar"></small>
+                </div>
+
+                <!-- Edad -->
+                <div class="mb-3">
+                    <label class="form-label">Edad:</label>
+                    <input type="number" id="edad" class="form-control" placeholder="Debe ser mayor o igual a 18">
+                    <small class="text-danger error-msg" id="error-edad"></small>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" id="btnEnviar" class="btn btn-primary btn-lg" disabled>Enviar</button>
+                    <button type="reset" id="btnReset" class="btn btn-secondary btn-lg ms-3">Borrar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- GALERÍA INTERACTIVA -->
+        <section id="galeria" class="mb-5">
+            <h2 class="text-center mb-4">Galería Interactiva</h2>
+
+            <div class="mb-3 text-center">
+                <input id="inputImagen" type="url" class="form-control mx-auto"
+                    placeholder="Ingresa una URL de imagen..." style="max-width:600px;">
+                <button id="btnAgregar" class="btn btn-primary mt-3">Agregar Imagen</button>
+                <button id="btnEliminar" class="btn btn-danger mt-3 ms-2">Eliminar Imagen Seleccionada</button>
+            </div>
+
+            <div id="contenedorGaleria" class="d-flex flex-wrap gap-3 justify-content-center p-3 bg-light rounded"
+                style="min-height:200px; border:2px dashed #ccc;">
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE LISTA DINÁMICA DE PRODUCTOS / SERVICIOS -->
+        <section id="lista-productos" class="container mt-5">
+            <h2>Lista de Productos</h2>
+            <h4>Nuestros Servicios Veterinarios</h4>
+            <div class="mb-3">
+                <input type="text" id="inputServicio" class="form-control" placeholder="Ejemplo: Consulta veterinaria">
+            </div>
+
+            <!-- Botón para agregar el servicio a la lista con JavaScript -->
+            <button id="btnAgregarServicio" class="btn btn-primary mb-3">
+                Agregar servicio
+            </button>
+
+            <!-- Lista no ordenada donde se renderizarán dinámicamente los servicios -->
+            <ul id="listaServicios">
+                <!-- Aquí se ingresan los servicios dinámicamente mediante JavaScript -->
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: CONTACTO -->
+
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+
+            <!-- Contenedor general -->
+            <div class="contacto-contenido">
+
+                <!-- Información de contacto con íconos -->
+                <div class="info-contacto">
+                    <p>🐾 <strong>Dirección:</strong> Av. Principal 123, Pomasqui</p>
+                    <p>📞 <strong>Teléfono:</strong> 0998 765 4321</p>
+                    <p>📧 <strong>Correo:</strong> info@patitasfelices.com</p>
+                    <p>⏰ <strong>Horario:</strong> Lun – Vie | 08h00 – 18h00</p>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <form id="formContacto">
+                    <input type="text" id="nombreContacto" placeholder="🐶 Tu nombre" required>
+                    <input type="email" id="emailContacto" placeholder="📧 Tu correo" required>
+                    <textarea id="mensajeContacto" placeholder="✍️ Escribe tu mensaje" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                    <!-- Mensaje de confirmación -->
+                    <p id="mensaje-exito" class="mensaje-exito d-none">
+                        🐶 ¡Gracias por contactarnos! Te responderemos muy pronto.
+                    </p>
+
+                </form>
+            </div>
+
+            <!-- Mapa de Google -->
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps?q=Quito,Ecuador&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VÍNCULO DE JS -->
+    <script src="script.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+        <!-- REDES SOCIALES -->
+        <div class="social-icons mt-3">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+
+        <div class="container">
+            <p><strong>Veterinaria Patitas Felices © 2025</strong></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
